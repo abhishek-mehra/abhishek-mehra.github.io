@@ -211,7 +211,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-cloud.svg" alt="cloud icon" width="40">
+                <img src="./assets/images/icon-app.svg" alt="cloud icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -243,7 +243,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-data.svg" alt="data icon" width="40">
+                <img src="./assets/images/icon-design.svg" alt="data icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -668,228 +668,55 @@
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
 
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
+        <section class="portfolio">
+          <h3 class="h3 portfolio-title">Featured Projects</h3>
 
           <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+            <li class="project-item">
+              <div class="project-content-box">
+                <h4 class="h4 project-item-title">Serverless Data Warehouse Architecture</h4>
+                <p class="project-item-text">
+                  Implemented secure, serverless Amazon Redshift architecture using Terraform IaC with VPC isolation and KMS encryption. Integrated EHR and research datasets from multiple studies while maintaining HIPAA compliance.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">AWS</span>
+                  <span class="tech-tag">Terraform</span>
+                  <span class="tech-tag">Redshift</span>
+                  <span class="tech-tag">HIPAA</span>
+                </div>
+              </div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+            <li class="project-item">
+              <div class="project-content-box">
+                <h4 class="h4 project-item-title">ETL Pipeline with Apache Airflow</h4>
+                <p class="project-item-text">
+                  Engineered a fault-tolerant ETL pipeline using Apache Airflow (MWAA), AWS Glue, and Redshift. Implemented dynamic schema evolution and automated alerting, processing 1TB of clinical research data daily.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Apache Airflow</span>
+                  <span class="tech-tag">AWS Glue</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Redshift</span>
+                </div>
+              </div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
+            <li class="project-item">
+              <div class="project-content-box">
+                <h4 class="h4 project-item-title">Patient Summary Report Generator</h4>
+                <p class="project-item-text">
+                  Developed and deployed a web application using Next.js, TypeScript, and SQL Server on AWS EC2 for generating comprehensive patient summary reports, enhancing doctor efficiency in patient care.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">SQL Server</span>
+                  <span class="tech-tag">AWS EC2</span>
+                </div>
+              </div>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
           </ul>
-
         </section>
 
       </article>
@@ -1152,6 +979,49 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <style>
+    .portfolio {
+      margin-bottom: 30px;
+    }
+
+    .project-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .project-item {
+      background: var(--border-gradient-onyx);
+      padding: 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-2);
+    }
+
+    .project-item-title {
+      margin-bottom: 10px;
+      color: var(--white-2);
+    }
+
+    .project-item-text {
+      color: var(--light-gray);
+      margin-bottom: 15px;
+    }
+
+    .project-tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tech-tag {
+      background: var(--onyx);
+      color: var(--orange-yellow-crayola);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.9em;
+    }
+  </style>
 
 </body>
 
