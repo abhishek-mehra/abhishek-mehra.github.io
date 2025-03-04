@@ -104,17 +104,41 @@ const pages = document.querySelectorAll("[data-page]");
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-
     for (let i = 0; i < pages.length; i++) {
       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
+        
+        // Reload PDF iframe when navigating to resume section
+        if (pages[i].dataset.page === 'resume') {
+          const resumeFrame = document.querySelector('.resume-content iframe');
+          if (resumeFrame) {
+            resumeFrame.src = resumeFrame.src;
+          }
+        }
       } else {
         pages[i].classList.remove("active");
         navigationLinks[i].classList.remove("active");
       }
     }
-
   });
 }
+
+// Add PDF load error handling
+window.addEventListener('load', function() {
+  const resumeFrame = document.querySelector('.resume-content iframe');
+  if (resumeFrame) {
+    resumeFrame.onerror = function() {
+      resumeFrame.style.display = 'none';
+      const errorMsg = document.createElement('div');
+      errorMsg.className = 'resume-error';
+      errorMsg.innerHTML = `
+        <p style="color: var(--light-gray); text-align: center; margin: 20px 0;">
+          Unable to load PDF viewer. Please use the download button below to view the resume.
+        </p>
+      `;
+      resumeFrame.parentNode.insertBefore(errorMsg, resumeFrame);
+    };
+  }
+});
